@@ -6,7 +6,6 @@
 package javaguia3estructurasdecontrol;
 
 import java.util.Scanner;
-import static jdk.nashorn.internal.objects.NativeString.toLowerCase;
 
 /**
  *
@@ -28,19 +27,19 @@ public class ejercicioExtra3 {
         Scanner leer = new Scanner(System.in).useDelimiter("\n");
         System.out.println("ingrese una letra ");
         String letra = (leer.nextLine());
-        letra= toLowerCase(letra);
+       // letra= toLowerCase(letra);
 
-        if (letra.equals("a")) {
+        if (letra.equalsIgnoreCase("a")) {
             System.out.println("La letra ingresada es una vocal");
 
-        } else if (letra.equals("e")) {
+        } else if (letra.equalsIgnoreCase("e")) {
             System.out.println(" La letra ingresada es una vocal");
 
-        } else if (letra.equals("i")) {
+        } else if (letra.equalsIgnoreCase("i")) {
             System.out.println(" La letra ingresada es una vocal");
-        } else if (letra.equals("o")) {
+        } else if (letra.equalsIgnoreCase("o")) {
             System.out.println(" La letra ingresada es una vocal");
-        } else if (letra.equals("u")) {
+        } else if (letra.equalsIgnoreCase("u")) {
             System.out.println(" La letra ingresada es una vocal");
         } else {
            System.out.println("La letra ingresada es una consonante");
@@ -50,3 +49,4 @@ public class ejercicioExtra3 {
     
     
 
+ 
